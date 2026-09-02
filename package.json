@@ -1,0 +1,14 @@
+{
+  "name": "shopware6-guest-checkout-e2e",
+  "version": "1.0.0",
+  "description": "Automated end-to-end test of the guest checkout flow (single product, Cash on Delivery) on the Shopware 6 demo storefront.",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0"
+  }
+}
