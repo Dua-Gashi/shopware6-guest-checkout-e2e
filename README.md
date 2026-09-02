@@ -9,24 +9,23 @@ Automated end-to-end test of the guest checkout flow (single product, Cash on De
 
 ## Setup
 
-
-npm install
-
+```
+npm install   
 npx playwright install --with-deps chromium
-
+```
 
 
 ## Running the test
-
-npm test              # headless run
-npm run test:headed   # watch it run in a browser window
-npm run test:debug    # step through with Playwright Inspector
+```
+npm test               # headless run   
+npm run test:headed   # watch it run in a browser window   
+npm run test:debug    # step through with Playwright Inspector   
 npm run report        # open the HTML report from the last run
-
+```
 
 
 ## Structure
-
+```
 Pages/                 Page Object Model — one class per storefront page
   ProductPage.js       search, open product, add to cart
   CartPage.js          view cart, go to checkout
@@ -34,7 +33,7 @@ Pages/                 Page Object Model — one class per storefront page
 tests/
   guest-checkout.spec.js   the end-to-end test (TC-01)
 playwright.config.js   base URL, timeouts, trace/screenshot/video on failure
-
+```
 
 ## Assertions made
 
